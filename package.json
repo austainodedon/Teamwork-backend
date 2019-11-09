@@ -4,7 +4,7 @@
   "description": "Teamwork is an internal social network for employees of an organization. The goal of this application is to facilitate interaction between colleagues and promote internal bonding. This is the backend for the application with the various API endpoints",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha backend/tests/**spec.js",
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js"
   },
