@@ -1,0 +1,42 @@
+{
+  "name": "teamwork-backend",
+  "version": "1.0.0",
+  "description": "Teamwork is an internal social network for employees of an organization. The goal of this application is to facilitate interaction between colleagues and promote internal bonding. This is the backend for the application with the various API endpoints",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austainodedon/Teamwork-backend.git"
+  },
+  "keywords": [
+    "Teamwork",
+    "Andela",
+    "DevC",
+    "Social",
+    "Network",
+    "Facebook",
+    "Augustine",
+    "Emeka",
+    "Employees",
+    "bonding"
+  ],
+  "author": "Augustine Emeka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austainodedon/Teamwork-backend/issues"
+  },
+  "homepage": "https://github.com/austainodedon/Teamwork-backend#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4"
+  }
+}
