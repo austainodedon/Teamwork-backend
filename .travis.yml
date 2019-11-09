@@ -1,3 +1,19 @@
 language: node_js
 node_js:
   - "stable"
+install: yarn
+script: yarn test
+cache:
+  directories:
+    - "node_modules"
+    - "test"
+
+branches:
+  only:
+    - development
+services:
+  - postgresql
+before_script:
+  - psql -c "CREATE DATABASE Teamwork;" -U postgres
+  - psql -U postgres -d Teamwork -a -f setupdb.sql
+after_success: yarn coverage
