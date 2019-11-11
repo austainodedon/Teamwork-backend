@@ -6,8 +6,8 @@
   "scripts": {
     "test": "nyc mocha backend/tests/**spec.js --recursive",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
