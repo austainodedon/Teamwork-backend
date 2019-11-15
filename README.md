@@ -1,6 +1,6 @@
 # Teamwork-backend
 
-[![Build Status](https://travis-ci.org/Terahpatrick/node-capstone-project.svg?branch=master)](https://travis-ci.org/Terahpatrick/node-capstone-project) [![Coverage Status](https://coveralls.io/repos/github/Terahpatrick/node-capstone-project/badge.svg?branch=master&service=github)](https://coveralls.io/github/Terahpatrick/node-capstone-project?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/6d510a899fdb1f7a8d56/maintainability)](https://codeclimate.com/github/Terahpatrick/node-capstone-project/maintainability)
+[![Build Status](https://travis-ci.org/austainodedon/teamwork-backend.svg?branch=develop)](https://travis-ci.org/austainodedon/teamwork-backend) [![Coverage Status](https://coveralls.io/repos/github/austainodedon/teamwork-backend/badge.svg?branch=develop&service=github)](https://coveralls.io/github/austainodedon/teamwork-backend?branch=develop)
 
 Teamwork is an internal social network for employees of an organization. The goal of this application is to facilitate interaction between colleagues and promote internal bonding. This is the backend for the application with the various API endpoints
 
