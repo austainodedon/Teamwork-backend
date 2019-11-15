@@ -1,6 +1,6 @@
 # Teamwork-backend
 
-[![Build Status](https://travis-ci.org/austainodedon/teamwork-backend.svg?branch=develop)](https://travis-ci.org/austainodedon/teamwork-backend)[![Coverage Status](https://coveralls.io/repos/github/austainodedon/teamwork-backend/badge.svg?branch=develop)](https://coveralls.io/github/austainodedon/teamwork-backend?branch=develop)
+[![Build Status](https://travis-ci.org/austainodedon/teamwork-backend.svg?branch=develop)](https://travis-ci.org/austainodedon/teamwork-backend)[![[![Coverage Status](https://coveralls.io/repos/github/austainodedon/Teamwork-backend/badge.svg?branch=develop)](https://coveralls.io/github/austainodedon/Teamwork-backend?branch=develop)
 
 Teamwork is an internal social network for employees of an organization. The goal of this application is to facilitate interaction between colleagues and promote internal bonding. This is the backend for the application with the various API endpoints
 
