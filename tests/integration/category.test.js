@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../../models/db/index');
 
 let server;
-const token = jwt.sign({ userId: 1, isAdmin: true, email: 'patrick@gmail.com' }, 'jwtPrivateKey');
+const token = jwt.sign({ userId: 1, isAdmin: true, email: 'emeka@gmail.com' }, 'jwtPrivateKey');
 
 describe('api/v1/categories', () => {
   beforeEach(() => {
