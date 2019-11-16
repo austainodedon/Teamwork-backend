@@ -98,7 +98,7 @@ describe('api/v1/articles', () => {
 
       await db.query(
         `INSERT INTO articles (articleId, title, article, createdOn, categoryId, createdBy) 
-          VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'patrick')`,
+          VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'austine')`,
       );
       const article = { title: 't', article: 'article', categoryId: 2 };
       const res = await request(server)
@@ -116,7 +116,7 @@ describe('api/v1/articles', () => {
 
       await db.query(
         `INSERT INTO articles (articleId, title, article, createdOn, categoryId, createdBy) 
-          VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'patrick')`,
+          VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'austine')`,
       );
 
       const article = { title: 'title', article: 'article' };
@@ -153,7 +153,7 @@ describe('api/v1/articles', () => {
 
       await db.query(
         `INSERT INTO articles (articleId, title, article, createdOn, categoryId, createdBy) 
-          VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'patrick')`,
+          VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'austine')`,
       );
       const res = await request(server)
         .delete(`/api/v1/articles/${1}`)
