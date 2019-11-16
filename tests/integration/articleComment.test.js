@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../../models/db/index');
 
 let server;
-const token = jwt.sign({ userId: 1, isAdmin: true, email: 'patrick@gmail.com' }, 'jwtPrivateKey');
+const token = jwt.sign({ userId: 1, isAdmin: true, email: 'emeka@gmail.com' }, 'jwtPrivateKey');
 
 describe('api/v1/articles', () => {
   beforeEach(() => {
@@ -33,7 +33,7 @@ describe('api/v1/articles', () => {
     it('should return a 404 if article to comment does not exist', async () => {
       await db.query(
         `INSERT INTO articles (articleId, title, article, createdOn, categoryId, createdBy) 
-        VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'patrick')`,
+        VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'austine')`,
       );
 
       const comment = { comment: 'comment comment' };
@@ -47,7 +47,7 @@ describe('api/v1/articles', () => {
     it('should return a 201 if comment is valid', async () => {
       await db.query(
         `INSERT INTO articles (articleId, title, article, createdOn, categoryId, createdBy) 
-            VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'patrick')`,
+            VALUES (1, 'title', 'article', '2019-11-6 18:0:42', 12, 'austine')`,
       );
 
       const comment = { comment: 'comment comment' };
