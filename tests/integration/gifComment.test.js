@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../../models/db/index');
 
 let server;
-const token = jwt.sign({ userId: 1, isAdmin: true, email: 'patrick@gmail.com' }, 'jwtPrivateKey');
+const token = jwt.sign({ userId: 1, isAdmin: true, email: 'emeka@gmail.com' }, 'jwtPrivateKey');
 
 describe('api/v1/gifs', () => {
   beforeEach(() => {
@@ -41,7 +41,7 @@ describe('api/v1/gifs', () => {
     it('should return a 201 if comment is valid', async () => {
       await db.query(
         `INSERT INTO gifs (gifId, title, imageUrl, createdOn, publicId, createdBy) 
-        VALUES (1, 'title', 'image url', '2019-11-6 18:0:42', 'something', 'patrick')`,
+        VALUES (1, 'title', 'image url', '2019-11-6 18:0:42', 'someid', 'austine')`,
       );
 
       const comment = { comment: 'comment comment' };
