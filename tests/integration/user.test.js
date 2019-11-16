@@ -4,24 +4,24 @@ const db = require('../../models/db/index');
 
 let server;
 const userRegister = {
-  firstName: 'patrick',
-  lastName: 'mwangi',
-  email: 'patrickmwangi@gmail.com',
+  firstName: 'austine',
+  lastName: 'emeka',
+  email: 'emeka@gmail.com',
   password: '1234',
   gender: 'male',
   jobRole: 'Engineer',
-  department: 'Back',
-  address: '123pat456',
+  department: 'Backend engineer',
+  address: 'South side',
   isAdmin: true,
 };
 
 const userLogin = {
-  email: 'patrickmwangi@gmail.com',
+  email: 'emeka@gmail.com',
   password: '1234',
 };
 
-const token = jwt.sign({ userId: 1, isAdmin: true, email: 'patrick@gmail.com' }, 'jwtPrivateKey');
-const notAdminToken = jwt.sign({ userId: 1, isAdmin: false, email: 'patrick@gmail.com' }, 'jwtPrivateKey');
+const token = jwt.sign({ userId: 1, isAdmin: true, email: 'emeka@gmail.com' }, 'jwtPrivateKey');
+const notAdminToken = jwt.sign({ userId: 1, isAdmin: false, email: 'austine@gmail.com' }, 'jwtPrivateKey');
 
 describe('api/v1/auth', () => {
   beforeEach(() => {
